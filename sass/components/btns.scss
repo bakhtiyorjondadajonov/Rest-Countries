@@ -1,0 +1,43 @@
+.btn{
+border: none;
+font-size: 2rem;
+    &--search{
+position: relative;
+z-index: 5;
+background-color: transparent;
+color: rgb(160, 155, 155);
+
+  margin-right: -5rem;
+    }
+    &--back{
+      
+        padding: 0.7rem 1.5rem;
+        border-radius: 5px;
+        background-color:white;
+        box-shadow: 0 0 1rem rgb(66, 65, 65);
+        margin: 4rem 0;
+        &:active{
+
+            transform: translateY(5%);
+        }
+    }
+    &--border{
+        margin: 0.5rem;
+        padding: 0.4rem 0.7rem;
+        border-radius: 5px;
+    }
+}
+//---------SELECT DROP-DOWN MENU----------//
+.select{
+ &__options{
+    font-family: inherit;
+     padding: 0.5rem 2.5rem;
+     border-radius: 3px;
+     font-size: 1.5rem;
+     border: none;
+     background-color: $color-primary--light;
+     &:focus{
+         outline: none;
+     }
+ }
+}

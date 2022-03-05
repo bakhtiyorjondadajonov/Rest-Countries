@@ -1,0 +1,42 @@
+.hidden{
+    display:none !important;
+    opacity:0;
+    transition: all 1s;
+}
+.dark-mode{
+    background-color:$color-primary--dark !important;
+    color:$color-tertiary--dark !important;
+    .main__container{
+        background-color:$color-secondary--dark !important;
+
+    }
+    .card{
+        background-color: $color-primary--dark;
+    }
+    .navigation{
+        background-color: $color-primary--dark;
+        
+    }
+    .search_bar__input{
+        background-color: $color-primary--dark;
+        box-shadow: 0rem 0rem 1.1rem $color-primary--light;
+        color:$color-tertiary--dark !important;
+        &::placeholder{
+            color:$color-tertiary--dark !important;
+
+        }
+    }
+    .btn--search{
+        color:$color-tertiary--dark;
+    }
+    select{
+        background-color: $color-primary--dark !important;
+        color:$color-tertiary--dark !important;
+        box-shadow: 0rem 0rem 1.1rem $color-primary--light;
+    }
+    .btn--back{
+        box-shadow: 0rem 0rem 1.1rem $color-primary--light; 
+        color:$color-tertiary--dark;  
+        background-color: $color-primary--dark;
+    }
+}

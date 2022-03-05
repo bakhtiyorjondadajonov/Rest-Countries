@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST COUNTRIES || by Bakhtiyorjon</title>
+    <script
+      src="https://kit.fontawesome.com/f76c29be79.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Gloria+Hallelujah&family=Luckiest+Guy&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Spartan:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="main__container">
+      <nav class="navigation">
+        <h4 class="heading-4">
+          Where in the world?
+          <span
+            class="textElement"
+            data-words='["England ","South Korea ","Uzbekistan "]'
+            data-wait="2000"
+          ></span>
+        </h4>
+        <div style="cursor: pointer" class="navigation__mode">
+          <img src="img/moon.png" alt="moon" class="navigation__logo" />
+          <p class="navigation__text">Dark mode</p>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="search_bar">
+          <div class="search_bar__first">
+            <button class="btn btn--search">
+              <i class="fas fa-search"></i>
+            </button>
+            <input
+              type="text"
+              class="search_bar__input"
+              placeholder="search countries..."
+            />
+          </div>
+          <div class="select">
+            <select name="first" id="first" class="select__options">
+              <option selected value="default">Filter by Region</option>
+              <option value="Africa">Africa</option>
+              <option value="Americas">Americas</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="Oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+        <div class="country_container">
+          <div class="card">
+            <img src="img/flag.png" alt="flag" class="flag" />
+            <div class="text_container">
+              <h2 class="heading-2 country">Country Name</h2>
+              <p class="paragraph"><span>Population:</span> 156444213</p>
+              <p class="paragraph"><span>Region:</span> Asia</p>
+              <p class="paragraph"><span>Capital:</span> Tashkent</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn--back hidden">&leftarrow; Back</button>
+        <div class="info hidden">
+          <img src="img/flag.png" alt="flag" class="info__img" />
+          <div class="info__box">
+            <h2 class="heading-2">Country Name</h2>
+            <p class="paragraph"><span>Native Name:</span>O'zbekiston</p>
+            <p class="paragraph"><span>Population:</span>15641525</p>
+            <p class="paragraph"><span>Region:</span>Asia</p>
+            <p class="paragraph"><span>Sub Region:</span>undefined</p>
+            <p class="paragraph"><span>Capital:</span>Tashkent</p>
+            <p class="paragraph"><span>Top Level Domain:</span>O'zbekiston</p>
+            <p class="paragraph"><span>Currency:</span>so'm</p>
+            <p class="paragraph"><span>Language:</span>Uzbek,Russian</p>
+          </div>
+          <div class="border_countries">
+            <p class="paragraph">
+              <span>Border Countries: </span>
+              <button class="btn">France</button>
+              <button class="btn">Germany</button>
+              <button class="btn">Niderland</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
